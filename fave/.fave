@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+if [ "$1" != "list" ]; then
+	echo $@ >> /home/ryuunosuke/bin/songlist
+else
+	cat /home/ryuunosuke/bin/songlist
+fi
